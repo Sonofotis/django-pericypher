@@ -1,0 +1,14 @@
+p {
+    color: white;
+  }
+
+body{
+ background-color:black;
+ height:100vh
+}
+
+#textblock{
+  display:block;
+  max-width:600px;
+  margin: 0px auto;s
+}

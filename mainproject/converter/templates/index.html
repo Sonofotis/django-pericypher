@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <div class="site text-center" id="textblock">
+
+    <h1><font color="#ffffff">Peri</font><font color="#FF9F0A">Cypher</font></h1><br>
+      <p>Peri<font color="#FF9F0A">Cypher</font> uses the periodic table of elements to create a substitution cypher. <br>Hide your messages in a cypher!</p>
+      <p>Encryption consists in substituting letters (or group of letters) representing a chemical symbol by its corresponding atomic number. <br>(Hydrogen H = 1, Helium He = 2, etc.)</p>
+      <p>If a letter does not exist in the periodic table of elements it will find a letter that exists to the right or left of such letter and then point left or right with > or < <br>(e.g. K = 19, L = 19>)</p>
+      <button type="button" class="btn btn-light"><a class="nav-link" href="{% url "texttocypher" %}">Text-To-Cypher</a></button> <button type="button" class="btn btn-warning"><a class="nav-link" href="{% url "cyphertotext" %}">Cypher-To-Text</a></button>
+    </div>
+
+{% endblock %}
